@@ -217,7 +217,8 @@
             $("#time").html("経過時間： " + etime);
             $("#remain").html("残り時間： " + rest);
             analog(rest);
-        }else if(rest <= 0){
+        }
+        if(rest <= 0){
             active = false;
             alarm();
         }
